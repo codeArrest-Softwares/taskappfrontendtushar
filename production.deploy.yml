@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  angular-app:
+    image: tusharjain25/taskapp:latest
+    ports:
+      - "8080:80"
+ 

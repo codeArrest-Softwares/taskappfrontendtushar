@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center bg-dark" >
+    <div class="mt-4">
+        <div class="card text-center mb-3" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title">Title : {{data?.title}}</h3>
+              <h6 class="card-text">Description : {{data?.description}}</h6>
+              <p>Priority : {{data?.priority}}</p>
+              <p>Status : {{data?.status}}</p>
+              <p>Percentage : {{data?.percentage}}%</p>
+              <p>Associated Projects : {{data?.associatedProjects}}</p>
+              <a (click)="closepopup()" class="btn btn-primary">Cancel</a>
+              <a (click)="delete_task(data.taskId)" class="btn btn-danger ms-3">Delete</a>
+            </div>
+          </div>
+    </div>
+</div>

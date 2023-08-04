@@ -1,0 +1,39 @@
+<div class="container ">
+  <h3 class="m-3 container">Update Task:</h3>
+  <div class="col-md-8 mb-4 mx-4">
+    <form [formGroup]="updatetask" >
+      <div class="mb-3">
+        <input type="text"  class="form-control" formControlName="title" placeholder="Title" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <textarea type="text" class="form-control" formControlName="description" placeholder="Description" id="exampleInputPassword1"></textarea>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="col-md-5">
+          <select formControlName="priority" class= "form-select mb-3 form-select-sm">
+            <option selected>Select Priority </option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <select formControlName="status" class="form-select mx-3 form-select-sm">
+            <option selected>Select Status</option>
+            <option value="1">Not Started</option>
+            <option value="2">Running</option>
+            <option value="3">Completed</option>
+          </select>
+        </div>
+        <div class="mb-3 mx-3">
+          <input type="number"  class="form-control ms-2" formControlName="percentage" placeholder="Percentage">
+        </div><h5>%</h5>
+      </div>
+      <div class="mb-3">
+        <input type="text"  class="form-control" formControlName="associatedProjects" placeholder="Associate Projects">
+      </div>
+      <button (click)="closepopup()"  class="btn btn-primary">Cancel</button>
+      <button type="submit" (click)="updateData()" class="btn btn-primary ms-4">Update Task</button>
+    </form>
+  </div>
+</div>

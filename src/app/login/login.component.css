@@ -1,0 +1,39 @@
+.rounded-t-5 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .toggler{
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .cascading-right {
+    margin-right: -50px;
+  }
+  .signup-img{
+    margin-left: 55px;
+  }
+  .red{
+    background-color: red;
+  }
+  .tc{
+    color: red;
+  }
+ 
+
+
+  @media (max-width: 991.98px) {
+    .cascading-right {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .rounded-tr-lg-0 {
+      border-top-right-radius: 0;
+    }
+
+    .rounded-bl-lg-5 {
+      border-bottom-left-radius: 0.5rem;
+    }
+  }
